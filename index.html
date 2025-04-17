@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="pl">
+<!DOCTYPE html><html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,6 +95,23 @@
       border-radius: 16px;
       margin-top: 20px;
     }
+    .gallery {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.4s;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -116,21 +132,16 @@
   <header>
     <h1>Estetic&PMU Klaudia Dutkiewicz</h1>
     <p>Kosmetolog z 8-letnim doświadczeniem</p>
-  </header>
-
-  <nav>
+  </header>  <nav>
     <a href="#o-mnie">O mnie</a>
     <a href="#uslugi">Usługi</a>
+    <a href="#galeria">Galeria</a>
     <a href="#kontakt">Kontakt</a>
-  </nav>
-
-  <section id="o-mnie">
+  </nav>  <section id="o-mnie">
     <h2>O mnie</h2>
     <img src="file-VXtMSxoBkzc53vwdW5BGqC" alt="Klaudia Dutkiewicz" class="profile-pic">
     <p>Nazywam się Klaudia Dutkiewicz. Jestem absolwentką Wyższej Szkoły Medycznej i od ponad 8 lat pracuję jako kosmetolog. Moja praca to pasja, którą realizuję w eleganckim i komfortowym salonie w Kudowie-Zdroju. Zawsze dbam o najwyższe standardy, estetykę i satysfakcję klientek.</p>
-  </section>
-
-  <section id="uslugi" class="services">
+  </section>  <section id="uslugi" class="services">
     <h2>Zakres usług</h2>
     <ul>
       <li>Peeling kawitacyjny</li>
@@ -148,17 +159,20 @@
       <li>Makijaż permanentny brwi, oczu i ust</li>
       <li>Stylizacja rzęs</li>
     </ul>
-  </section>
-
-  <section id="kontakt" class="contact">
+  </section>  <section id="galeria">
+    <h2>Galeria</h2>
+    <div class="gallery">
+      <img src="images/zdjecie1.jpg" alt="Zabieg 1">
+      <img src="images/zdjecie2.jpg" alt="Zabieg 2">
+      <img src="images/zdjecie3.jpg" alt="Wnętrze salonu">
+    </div>
+  </section>  <section id="kontakt" class="contact">
     <h2>Kontakt</h2>
     <p><strong>Adres:</strong> ul. Zdrojowa 33A, 57-350 Kudowa-Zdrój</p>
     <p><strong>Telefon:</strong> <a href="tel:537928999">537 928 999</a></p>
     <p><strong>Email:</strong> <a href="mailto:klaudiadutkiewicz70@gmail.com">klaudiadutkiewicz70@gmail.com</a></p>
     <iframe class="map" src="https://www.google.com/maps?q=Zdrojowa+33A,+57-350+Kudowa-Zdrój&output=embed"></iframe>
-  </section>
-
-  <footer>
+  </section>  <footer>
     <p>&copy; 2025 Estetic&PMU Klaudia Dutkiewicz – Wszystkie prawa zastrzeżone</p>
   </footer>
 </body>
