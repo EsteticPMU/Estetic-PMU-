@@ -1,0 +1,5 @@
+<a href="https://preview.mailerlite.io/preview/1495870/sites/153403940686268140/7JiPNU" target="_blank">
+  <button style="background-color: white; color: #5A2BAE; padding: 10px 20px; border: none; border-radius: 5px; font-weight: bold;">
+    ZAPISZ SIĘ
+  </button>
+</a>
